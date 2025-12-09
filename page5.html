@@ -14,36 +14,30 @@
         }
         body {
             background-color: #FDFD96;
-            color: #18017d
-        }
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 40px;
-            max-width: 750px;
-            margin: auto;
-        }
-        .card {
-            padding: 25px;
-            border-radius: 20px;
-            text-align: center;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-        .card img {
-            width: 100%;
-            border-radius: 15px;
+            color: #18017d;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
         }
         .footer-custom {
             background-color: #004682;
-            color: #004682;
-            width: 100%;
-            margin: 0;
-            padding-left: 0;
-            padding-right: 0;
+            color: #ffffff;
+            width: 100vw;
+            margin-left: calc(-50vw + 50%);
+            margin-top: auto;
         }
-        h5 {
-            color: #d8dee3;
+        a {
+            color: #39d6fe;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #a9b6ff;
+            text-decoration: underline;
+        }
+        .footer-custom h5 {
+            color: #ffffff;
         }
     </style>
 </head>
