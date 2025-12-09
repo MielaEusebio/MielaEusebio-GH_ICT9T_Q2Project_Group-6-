@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,30 +13,27 @@
         display: flex;
         gap: 10px;
         }
+
         body {
             background-color: #FDFD96;
-            color: #004682
+            color: #004682;
         }
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 40px;
-            max-width: 750px;
-            margin: auto;
-        }
-        .card {
-            padding: 25px;
-            border-radius: 20px;
-            text-align: center;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-        .card img {
+
+        .footer-custom {
+            background-color: #004682;
+            color: #004682;
             width: 100%;
-            border-radius: 15px;
+            margin: 0;
+            padding: 20px 0;
         }
-        .footer-custom h5 {
-            color: #ffffff;
+        body {
+            background-color: #FDFD96;
+            color: #18017d;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
         }
         .footer-custom {
             background-color: #004682;
@@ -42,6 +41,19 @@
             width: 100vw;
             margin-left: calc(-50vw + 50%);
             margin-top: auto;
+        }
+        a {
+            color: #39d6fe;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #a9b6ff;
+            text-decoration: underline;
+        }
+        .footer-custom h5 {
+            color: #ffffff;
+        }
+        
     </style>
 </head>
 <body>
@@ -61,46 +73,101 @@
             </div>
         </div>
     </nav>
-    <br>
-    <h1 style="text-align: center;">Contributions</h1>
-    <br>
-    <div class="container mt-3">
-    <div class="row"; style="border: 4px solid #004682; background: #6158df;">
-    <br>
-    <div class="grid">
-        <div class="card" style="background: #36C7F4;">
-            <img src="https://github.com/MielaEusebio/GH_ICT9T_Q2Project_Group-6/blob/main/ALONZO.png?raw=true" style="width: 400px; height: 400px;" class="img-fluid mx-auto d-block w-100 object-fit-cover h-100">
-            <div class="title" style="font-size: 20px; font-weight: ;">Alonzo Paulino</div>
-            <div class="page">Pages 1 & 5</div>
+
+       <div class="container mt-3">
+
+    <div class="row"; style="border: 4px solid #c5265f; background: #F770AB ;">
+    <div class="col-sm" style="margin:10px;"><br>
+        <div class="col-sm" style="background-color: #fdb0d3  ; margin: 15px; padding:10px;">
+        <br>
+
+        <form>
+        <span style="font-weight:bolder; text-align: center;"><h3>Enroll Now!</h3>
+        <h4>Don't miss the chance to let your child shine!</h4>
+    </span>
+
+            <img src="OBMC White Logo with Blur.png" alt="OBMC's White Logo" width="50px" height="50px">
+
+            <span style="padding-left:50px;">
+                <div class="mb-3 mt-3">
+                
+                <hr>
+                <h5>Students Information</h5>
+                <label>Full Name of Child</label>
+                <input type="textbox" placeholder="i.e. Carlos Dela Cruz" class="form-control">
+                
+                <br>
+               <label for="myDate">Birthday</label>
+               <input type="date" id="myDate" name="eventDate">
+               <span style="margin:15px;"><label class="form-label">Sex</label>
+                <select>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Intersex</option>
+                </select></span>
+
+                <span style="margin:6px;"><label class="form-label">Age</label>
+                    <input type="number" placeholder="i.e. 5"></span>
+
+                <span style="margin:6px;"><label class="form-label">Previous School</label>
+                <input type="textbox" placeholder="i.e. De La Salle"></span>
+
+                    <br><br>
+                    <hr>
+                    <h5>Parents/Guardians Information</h5>
+                    <label>Full Name of Parent/Guardian</label>
+                    <input type="textbox" placeholder="i.e. Sophia M. Reyes" class="form-control">
+
+                    <br>
+                    <label>Email Address</label>
+                    <input type="textbox" placeholder="i.e. 123123123@gmail.com" class="form-control">
+
+                    <br>
+                    <label>Contact Number</label>
+                    <input type="number" placeholder="i.e. 0917 123 4567" class="form-control">
+                    <br>
+                    <label class="form-label">Relationship to Child</label>
+                    <select class="form-select">
+                        <option>Parent</option>
+                        <option>Relative</option>
+                        <option>Guardian</option>
+                    </select>
+                    <br>
+                    
+                    <hr>
+                        <h5>Enrollment Details</h5>
+                        <label class="form-label">Grade Level you're applying for</label>
+                            <select class="form-select">
+                                <option>Casa (Ages 3–5)</option>
+                                <option>Primary Grade School (Ages 6–8)</option>
+                                <option>Intermediate Grade School (Ages 9–12)</option>
+                                <option>Junior High School (Ages 13–16)</option>
+                                <option>Senior High School (Ages 17–18)</option>
+                            </select>
+                        <label class="form-label">Enrollment Status</label>
+                                <select class="form-select">
+                                    <option>New Student</option>
+                                    <option>Transferee</option>
+                                    <option>Returning Student</option>
+                                    <option>Foreign Student</option>
+                                    <option>Other</option>
+                                </select>
+                <hr>
+                <input type="checkbox"  value="Declaration" name="Declaration"> I confirm that all information I provided is accurate and complete.
+
+                <br><br>
+                <div class="mb-5 mt-3">
+            <button type="button" class="btn btn-outline-primary btn-block">Submit</button>
+            <button type="button" class="btn btn-outline-danger btn-block">Reset</button>
+
         </div>
-        <right>
-            <div class="card" style="background: #36C7F4;">
-                <img src="https://github.com/MielaEusebio/GH_ICT9T_Q2Project_Group-6/blob/main/JESSE.png?raw=true" style="width: 375px; height: 400px;" class="img-fluid mx-auto d-block w-100 object-fit-cover h-100">
-                <div class="title" style="font-size: 20px;">Jesse James Villante</div>
-                <div class="page">Page 2</div>
-            </div>
-        </right>
-    </div>
-    </div>
-    <br>
-    <div class="row"; style="border: 4px solid #a81919; background: #db5151;">
-    <br>
-    <div class="grid">
-        <div class="card" style="background: #ffc1c1;">
-            <img src="https://github.com/MielaEusebio/MielaEusebio-GH_ICT9T_Q2Project_Group-6-/blob/main/Andrea%20Zagala%20no%20bg.png?raw=true" style="width: 400px; height: 400px;" class="img-fluid mx-auto d-block w-100 object-fit-cover h-100">
-            <div class="title" style="font-size: 20px;">Andrea Zagala</div>
-            <div class="page">Page 3</div>
+                </div>
+        </form>
         </div>
-        <right>
-            <div class="card" style="background: #ffc1c1;">
-                <img src="https://github.com/MielaEusebio/MielaEusebio-GH_ICT9T_Q2Project_Group-6-/blob/main/Miela%20Eusebio%20no%20bg.png?raw=true" style="width: 400px; height: 400px;" class="img-fluid mx-auto d-block w-100 object-fit-cover h-100">
-                <div class="title" style="font-size: 20px;">Miela Eusebio</div>
-                <div class="page">Page 4</div>
-            </div>
-        </right>
     </div>
     </div>
-    <br><footer class="footer-custom text-light pt-4 pb-2">
+    <div>
+            <br><footer class="footer-custom text-light pt-4 pb-2">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-4 mb-3">
@@ -127,5 +194,5 @@
             </div>
         </div>
     </footer>
-</body>
+    </body>
 </html>
